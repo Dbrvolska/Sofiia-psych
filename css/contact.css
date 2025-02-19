@@ -1,0 +1,162 @@
+/* Общий стиль */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://sotni.ru/wp-content/uploads/2023/08/v-tolshche-vody-4.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  line-height: 1.6
+}
+
+.courier-prime-bold-italic {
+  font-family: "Courier Prime", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+/* Заголовок */
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Прозрачный чёрный фон */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  height: 100px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+}
+
+.logo-container img {
+  max-height: 90px;
+}
+
+/* Навигация */
+.navbar {
+  background: rgba(0, 0, 0, 0.8); /* Прозрачный чёрный фон */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white; /* Белый текст */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background: #1a73e8; /* Синий фон при наведении */
+  color: #fff;
+}
+
+/* Основной контент */
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.7); /* Полупрозрачный темный фон */
+  color: white;
+}
+
+.intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+
+/* Секция советов */
+.advice {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.advice h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.advice-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.advice-item {
+  background: rgba(255, 255, 255, 0.7); /* Полупрозрачный темный фон */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.advice-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.advice-item h3 {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+
+.advice-item p {
+  font-size: 1rem;
+  color: #000000; /* Светло-серый текст */
+  line-height: 1.6;
+}
+
+/* Подвал */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.8); /* Прозрачный чёрный фон */
+  color: white;
+  margin-top: 20px;
+}
+
+.small-img {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+}
